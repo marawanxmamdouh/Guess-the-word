@@ -22,7 +22,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
+import androidx.navigation.findNavController
 import com.example.android.guesstheword.R
 import com.example.android.guesstheword.databinding.TitleFragmentBinding
 
@@ -41,7 +41,7 @@ class TitleFragment : Fragment() {
         )
 
         binding.playGameButton.setOnClickListener {
-            findNavController().navigate(TitleFragmentDirections.actionTitleToGame())
+            it.findNavController().navigate(TitleFragmentDirections.actionTitleToGame())
         }
         return binding.root
     }

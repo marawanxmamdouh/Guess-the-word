@@ -14,7 +14,7 @@ private val CORRECT_BUZZ_PATTERN = longArrayOf(100, 100, 100, 100, 100, 100)
 private val PANIC_BUZZ_PATTERN = longArrayOf(0, 200)
 private val GAME_OVER_BUZZ_PATTERN = longArrayOf(0, 2000)
 private val NO_BUZZ_PATTERN = longArrayOf(0)
-private const val COUNTDOWN_PANIC_SECONDS = 10L
+private const val COUNTDOWN_PANIC_SECONDS = 15L
 
 class GameViewModel : ViewModel() {
 
